@@ -11,7 +11,7 @@ public class User {
     private String password;
     private String taxId;
     private String createdAt;
-    private List<Addres> addres;
+    private List<Address> addres;
     
     // mi construcctor vacio
     public User() {
@@ -20,7 +20,7 @@ public class User {
     
     // contrucctor con tpodos los campos
     public User(String id, String name, String email, String phone, String password, String taxId, String createdAt,
-            List<Addres> addres) {
+            List<Address> addres) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -89,11 +89,11 @@ public class User {
         this.createdAt = createdAt;
     }
 
-    public List<Addres> getAddres() {
+    public List<Address> getAddres() {
         return addres;
     }
 
-    public void setAddres(List<Addres> addres) {
+    public void setAddres(List<Address> addres) {
         this.addres = addres;
     }
 

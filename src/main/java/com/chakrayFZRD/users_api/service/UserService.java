@@ -1,7 +1,7 @@
 package com.chakrayFZRD.users_api.service;
 
 import com.chakrayFZRD.users_api.model.User;
-import com.chakrayFZRD.users_api.model.Addres;
+import com.chakrayFZRD.users_api.model.Address;
 import org.springframework.stereotype.Service;
 import jakarta.annotation.PostConstruct;
 import java.util.List;
@@ -15,9 +15,9 @@ public class UserService {
     @PostConstruct
     public void init() {
         // usuarios de ejemplo
-        List<Addres> addresList1 = new ArrayList<>();
-        addresList1.add(new Addres(1, "Home", "Gilboa Pte116", "MX"));
-        addresList1.add(new Addres(2, "High Schol", "Lic Jose Benitez", "US"));
+        List<Address> addresList1 = new ArrayList<>();
+        addresList1.add(new Address(1, "Home", "Gilboa Pte116", "MX"));
+        addresList1.add(new Address(2, "High Schol", "Lic Jose Benitez", "US"));
         
         // user 1
         User user1 = new User(
@@ -58,6 +58,12 @@ public class UserService {
         users.add(user1);
         users.add(user2);
         users.add(user3);
+    } 
+
+    public List<User> getAllUsers() {
+        return users;
     }
+
+
 
 }

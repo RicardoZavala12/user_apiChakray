@@ -2,7 +2,7 @@ package com.chakrayFZRD.users_api.model;
 
 public class Address {
 
-    private String id;
+    private Integer id;
     private String name;
     private String street;
     private String countryCode;
@@ -13,17 +13,17 @@ public class Address {
     }
 
     // getters and setters
-    public Address(String id, String name, String street, String countryCode) {
+    public Address(Integer id, String name, String street, String countryCode) {
         this.id = id;
         this.name = name;
         this.street = street;
         this.countryCode = countryCode;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
     public String getName() {
